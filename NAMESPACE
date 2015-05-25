@@ -2,5 +2,6 @@
 
 export("%>%")
 export(sdb)
+export(sdb_constrain)
 export(sdb_get_results)
 importFrom(magrittr,"%>%")

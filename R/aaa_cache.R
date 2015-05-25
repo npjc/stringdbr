@@ -11,7 +11,7 @@ ws_assign <- function(var, env = stringdbr:::ws_) {
 ws_build <- function() {
 
   ## webservice url
-  url <- "http://www.string-db.org/api"
+  url <- "http://www.string-db.org"
   ws_assign(url)
 
   ## webservice return formats

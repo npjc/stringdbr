@@ -47,7 +47,7 @@ ratify_sdb <- function(sdb) {
     c("url", "format", "request", "query") %in% names(sdb))
 
   if (valid) {
-    sdb$path <- paste0(sdb$format, "/", sdb$request)
+    sdb$path <- paste0("api", "/", sdb$format, "/", sdb$request) ##FIXME
     return(sdb)
   } else {
     stop("sdb object not valid. must at least contain \n $url, $format, $request and $query")
