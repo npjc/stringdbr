@@ -6,7 +6,7 @@ ws_assign <- function(var, env = stringdbr:::ws_) {
   assign(deparse(substitute(var)), var, envir = env)
 }
 
-#' Assign static variables to bg_ws environment
+#' Assign static variables to ws_ environment
 #' @keywords internal
 ws_build <- function() {
 
